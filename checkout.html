@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <!-- import tailwind  -->
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- import fontAwesome  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- import style sheet -->
+    <link rel="stylesheet" href="./css/checout.css">
+</head>
+<body>
+    <header class="p-3 fixed w-full top-0 bg-white">
+        <div class="container m-auto flex justify-between items-center ">
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="w-full" src="images/amazon-logo.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="items  font-bold text-xl capitalize">
+                Checkout (<span class="text-teal-500 cart-quantity">0 </span><a class="text-teal-500" href="./checkout.html"> Items</a>)
+            </div>
+            
+            <div class="">
+                <a href="">
+                    <img class="" src="images/icons/checkout-lock-icon.png" alt="">
+                </a>
+            </div>
+
+            
+        </div>
+    </header>
+
+
+    <main class="container m-auto mt-24">
+        <section class="header">
+            <h1 class="font-bold text-xl mb-4">Review your order</h1>
+        </section>
+
+        <div class="content md:flex gap-3 flex-row-reverse justify-between">
+            <section class="summary p-3 md:w-1/3">
+            </section>
+            
+            <section class="checkout-items">
+                <section class=" mt-3 mb-3 p-3 md:flex gap-5">
+                    <div class="top-section">
+                        <div class="section-header mb-5 text-green-700 font-bold text-xl">
+                            Delivery date: Tuesday, April 8
+                        </div>
+                        <div class="product-info flex gap-3">
+                            <div class="product-img">
+                                <img src="images/products/6-piece-non-stick-baking-set.webp" alt="">
+                            </div>
+                            <div class="details">
+                                <p>Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+                                <span>$10.90</span>
+                                <div class="flex gap-1">
+                                    <span class="quantity">Quantity: <span>1</span></span>
+                                    <a class="remove-btn hover:cursor-pointer">Update</a>
+                                    <a class="remove-btn hover:cursor-pointer">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botom-section mt-5">
+                        <div class="flex gap-3 items-center">
+                            <input type="radio" name="" id="">
+                            <div>
+                                <h3 class="header text-green-700 font-bold">Tuesday, April 8</h3>
+                                <p class="text-gray-400">FREE Shipping</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center"><input type="radio" name="" id="">
+                            <div>
+                                <h3 class="header text-green-700 font-bold">Wednesday, April 2</h3>
+                                <p class="text-gray-400">$4.99 - Shipping</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center"><input type="radio" name="" id="">
+                            <div>
+                                <h3 class="header text-green-700 font-bold">Monday, March 31</h3>
+                                <p class="text-gray-400">$9.99 - Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        
+    </main>
+    
+    <script type="module" src="js/checkout.js"></script>
+</body>
+</html>

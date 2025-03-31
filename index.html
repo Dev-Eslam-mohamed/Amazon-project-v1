@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <!-- import tailwind  -->
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- import fontAwesome  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- import style sheet -->
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="bg-cyan-950 w-full">
+        <div class="container m-auto flex justify-between items-center ">
+            <div class="logo">
+                <a href="">
+                    <img class="w-full" src="images/amazon-logo-white.png" alt="">
+                </a>
+            </div>
+            <div class="search-box text-white relative">
+                <input type="text" class="search w-full bg-white ">
+                <button class="absolute top-0 right-0 bg-amber-500 search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="cart-box hidden md:flex justify-between items-center text-white">
+                <div class="return-orders">
+                    <a href="./oreder.html">Return & <span class="font-bold">Orders</span></a>
+                </div>
+                <div class="cart ">
+                    <a href="./checkout.html" class="flex justify-between items-center ">
+                        <div class="cart-logo relative">
+                            <img class="cart-logo" src="images/icons/cart-icon.png" alt="">
+                            <span class="cart-quantity logo-cart-quantity text-amber-500 font-bold absolute -top-2 left-1/2">0</span>
+                        </div>
+                        <span class="font-bold">Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <button class="text-white text-3xl md:hidden menu-btn">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="menu text-white absolute bg-cyan-950 text-center hidden md:hidden" >
+                <div class="menu-return-orders">
+                    <a href="./oreder.html">Return & <span class="font-bold">Orders</span></a>
+                </div>
+                <div class="menu-cart ">
+                    <a href="./checkout.html" class="flex justify-center items-center ">
+                        cart (<span class="font-bold cart-quantity">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="products flex flex-wrap">
+    </section>
+</body>
+<script>
+    // header menu btn 
+    const menuBtn = document.querySelector('.menu-btn');
+    menuBtn.addEventListener('click', ()=>{
+        document.querySelector('.menu').classList.toggle('hidden')
+    });
+
+</script>
+
+<script type="module" src="js/script.js"></script>
+</html>

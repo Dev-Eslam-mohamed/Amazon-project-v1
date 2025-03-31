@@ -1,0 +1,60 @@
+.order{
+    margin-top: 75px;
+}
+.section-header h2 {
+    margin-bottom: 20px;
+}
+.order-sheet{
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.order-header{
+    background-color: #eee;
+    padding: 20px;
+}
+.order-header div h3 {
+    font-weight: bold;
+}
+
+
+
+.order-card{
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.order-card .img{
+    width: 100px;
+}
+@media (min-width: 768px){
+    .order-card .img{
+        width: 200px;
+    }
+}
+button img {
+    width: 25px;
+}
+
+.btns button{
+    width: 130px;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.track-pakage{
+    border: 1px solid #eee;
+}
+
+@media (min-width: 768px){
+    .order-card{
+        position: relative;
+    }
+
+    .track-pakage{
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+}
